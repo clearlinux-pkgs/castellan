@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 0.2.1
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.2.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.2.1.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
