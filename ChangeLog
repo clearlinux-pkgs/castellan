@@ -1,6 +1,32 @@
 CHANGES
 =======
 
+0.4.0
+-----
+
+* Add Credential Authentication Usage Documentation
+* Allow Barbican Key Manager to accept different auth credentials
+* Updated from global requirements
+* Add help to Castellan Credential Factory Opts
+* Updated from global requirements
+* Introduce Castellan Credential Factory
+* Updated from global requirements
+* Introduce Castellan Credential Objects
+* Add created property to Managed Objects
+* Update MockKeyManager to use given algorithm
+* Remove functional test dependency on config file
+* Mock key manager takes configuration as an arg
+* Updated from global requirements
+* Clean up removed hacking rule from [flake8] ignore lists
+* Use Keystone V3 Identity Plugins for Functional Tests
+* Updated from global requirements
+* Add logic to error out of key creation if order errors out
+* Update docs with parsing config files
+* Removes MANIFEST.in as it is not needed explicitely by PBR
+* Remove py26 support from castellan
+* Updated from global requirements
+* Move line of code to ensure context and client stay in sync
+
 0.3.1
 -----
 
