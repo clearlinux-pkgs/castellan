@@ -31,3 +31,4 @@ python-mock
 funcsigs-python
 prettytable-python
 requests-python
+docutils
