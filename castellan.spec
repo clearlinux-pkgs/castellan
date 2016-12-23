@@ -4,14 +4,13 @@
 #
 Name     : castellan
 Version  : 0.4.0
-Release  : 12
+Release  : 13
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: castellan-python
-BuildRequires : Jinja2
 BuildRequires : Sphinx
 BuildRequires : cffi
 BuildRequires : cffi-python
@@ -20,6 +19,7 @@ BuildRequires : docutils
 BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : funcsigs-python
+BuildRequires : imagesize-python
 BuildRequires : iso8601
 BuildRequires : msgpack-python
 BuildRequires : netifaces
@@ -74,6 +74,7 @@ python components for the castellan package.
 %setup -q -n castellan-0.4.0
 
 %build
+export LANG=C
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
