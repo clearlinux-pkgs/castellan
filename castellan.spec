@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 0.4.0
-Release  : 14
+Release  : 15
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
@@ -19,8 +19,8 @@ BuildRequires : docutils
 BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : funcsigs-python
-BuildRequires : imagesize-python
 BuildRequires : iso8601
+BuildRequires : markupsafe-python
 BuildRequires : msgpack-python
 BuildRequires : netifaces
 BuildRequires : oslo.config
@@ -75,7 +75,7 @@ python components for the castellan package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484537352
+export SOURCE_DATE_EPOCH=1486522411
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -85,7 +85,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1484537352
+export SOURCE_DATE_EPOCH=1486522411
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
