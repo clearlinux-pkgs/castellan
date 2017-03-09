@@ -4,23 +4,32 @@
 #
 Name     : castellan
 Version  : 0.4.0
-Release  : 15
+Release  : 16
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: castellan-python
+Requires: Babel
+Requires: cryptography
+Requires: oslo.config
+Requires: oslo.context
+Requires: oslo.log
+Requires: oslo.policy
+Requires: oslo.serialization
+Requires: oslo.utils
+Requires: pbr
 BuildRequires : Sphinx
 BuildRequires : cffi
 BuildRequires : cffi-python
+BuildRequires : configparser-python
 BuildRequires : cryptography
 BuildRequires : docutils
 BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : funcsigs-python
 BuildRequires : iso8601
-BuildRequires : markupsafe-python
 BuildRequires : msgpack-python
 BuildRequires : netifaces
 BuildRequires : oslo.config
@@ -63,8 +72,6 @@ Generic Key Manager interface for OpenStack.
 %package python
 Summary: python components for the castellan package.
 Group: Default
-Requires: cryptography
-Requires: oslo.config
 
 %description python
 python components for the castellan package.
@@ -75,7 +82,7 @@ python components for the castellan package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1486522411
+export SOURCE_DATE_EPOCH=1489026532
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -85,7 +92,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1486522411
+export SOURCE_DATE_EPOCH=1489026532
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
