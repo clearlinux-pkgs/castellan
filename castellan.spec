@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 0.4.0
-Release  : 16
+Release  : 17
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
@@ -20,44 +20,12 @@ Requires: oslo.policy
 Requires: oslo.serialization
 Requires: oslo.utils
 Requires: pbr
-BuildRequires : Sphinx
-BuildRequires : cffi
-BuildRequires : cffi-python
 BuildRequires : configparser-python
-BuildRequires : cryptography
-BuildRequires : docutils
-BuildRequires : enum34-python
-BuildRequires : extras
-BuildRequires : funcsigs-python
-BuildRequires : iso8601
-BuildRequires : msgpack-python
-BuildRequires : netifaces
-BuildRequires : oslo.config
-BuildRequires : oslo.log
-BuildRequires : oslo.policy
-BuildRequires : oslo.serialization
-BuildRequires : oslo.utils
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : prettytable-python
-BuildRequires : pyasn1-python
-BuildRequires : pycparser
-BuildRequires : pycparser-python
-BuildRequires : python-barbicanclient
 BuildRequires : python-dev
-BuildRequires : python-keystoneclient
-BuildRequires : python-mock
 BuildRequires : python3-dev
-BuildRequires : requests-python
 BuildRequires : setuptools
-BuildRequires : stevedore
-BuildRequires : testrepository-python
-BuildRequires : testscenarios
-BuildRequires : testtools
-BuildRequires : testtools-python
-BuildRequires : wrapt-python
 
 %description
 =========
@@ -82,7 +50,7 @@ python components for the castellan package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489026532
+export SOURCE_DATE_EPOCH=1489280714
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -92,7 +60,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1489026532
+export SOURCE_DATE_EPOCH=1489280714
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
