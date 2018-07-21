@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 0.4.0
-Release  : 20
+Release  : 21
 URL      : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/castellan/castellan-0.4.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532209118
+export SOURCE_DATE_EPOCH=1532216948
 python3 setup.py build -b py3
 
 %check
