@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+0.19.0
+------
+
+* Add code to generate private keys
+* import zuul job settings from project-config
+* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
+* Update .gitreview for stable/rocky
+
 0.18.0
 ------
 
