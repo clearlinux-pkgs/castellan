@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 0.19.0
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/f7/f0/216b1344a5be8c7869445cf4cd702843d77e20378bdca8e828d5e573797e/castellan-0.19.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f7/f0/216b1344a5be8c7869445cf4cd702843d77e20378bdca8e828d5e573797e/castellan-0.19.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534889332
+export SOURCE_DATE_EPOCH=1536549501
 python3 setup.py build -b py3
 
 %check
