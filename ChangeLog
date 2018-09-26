@@ -1,13 +1,18 @@
 CHANGES
 =======
 
-0.19.0
+0.20.1
 ------
 
-* Add code to generate private keys
+* Bump HashiCorp Vault version for tests
+* Fix Vault K/V API compatibility
+* add python 3.6 unit test job
 * import zuul job settings from project-config
-* Update UPPER\_CONSTRAINTS\_FILE for stable/rocky
-* Update .gitreview for stable/rocky
+* Update reno for stable/rocky
+* Switch to stestr
+* Add release note link in README
+* Add code to generate private keys
+* fix tox python3 overrides
 
 0.18.0
 ------
