@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+1.0.0
+-----
+
+* Add method to wrap HashiCorp Vault HTTP API calls
+
 0.20.1
 ------
 
