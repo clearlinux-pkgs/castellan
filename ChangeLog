@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.1.0
+-----
+
+* Add Castellan Oslo Config Driver
+* Update min tox version to 2.0
+* Don't quote {posargs} in tox.ini
+
 1.0.0
 -----
 
