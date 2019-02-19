@@ -1,11 +1,19 @@
 CHANGES
 =======
 
+1.2.0
+-----
+
+* Change openstack-dev to openstack-discuss
+
 1.1.0
 -----
 
 * Add Castellan Oslo Config Driver
+* Use template for lower-constraints
 * Update min tox version to 2.0
+* vault: support configuration of KV mountpoint
+* vault: add AppRole support
 * Don't quote {posargs} in tox.ini
 
 1.0.0
