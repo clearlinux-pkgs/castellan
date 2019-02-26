@@ -1,5 +1,5 @@
 PKG_NAME := castellan
-URL = https://files.pythonhosted.org/packages/84/33/ff5a116d819a86e44539f581d0f12fc4ce16544bd10fa4c5a603cdeefe19/castellan-1.2.0.tar.gz
+URL = https://files.pythonhosted.org/packages/26/97/ffaea03b80e4c517dcf7eb49f1cf955ef919cb2f16991f449d181de6a9a1/castellan-1.2.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

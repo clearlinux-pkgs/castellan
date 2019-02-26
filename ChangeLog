@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.2.1
+-----
+
+* Fix length usage in VaultKeyManager.create\_key
+* add python 3.7 unit test job
+
 1.2.0
 -----
 
