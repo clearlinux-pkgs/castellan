@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 2.0.0
-Release  : 39
+Release  : 40
 URL      : https://files.pythonhosted.org/packages/85/73/2eb32f1dbd0876533f29cf01519a45a5436d022ef5543947a3139f0b9701/castellan-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/85/73/2eb32f1dbd0876533f29cf01519a45a5436d022ef5543947a3139f0b9701/castellan-2.0.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
@@ -72,6 +72,7 @@ python components for the castellan package.
 Summary: python3 components for the castellan package.
 Group: Default
 Requires: python3-core
+Provides: pypi(castellan)
 
 %description python3
 python3 components for the castellan package.
@@ -86,7 +87,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581090608
+export SOURCE_DATE_EPOCH=1582903844
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
