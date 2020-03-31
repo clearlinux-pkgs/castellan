@@ -1,6 +1,4 @@
 # This file contains recursive sources that require this package
-barbican
 cinder
 cursive
-nova
-sahara
+swift
