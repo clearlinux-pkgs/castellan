@@ -4,7 +4,7 @@
 #
 Name     : castellan
 Version  : 3.3.0
-Release  : 46
+Release  : 47
 URL      : https://files.pythonhosted.org/packages/df/b4/d2b977587094248e7cfca7474fff948ed7b631213ab4b18c2acb9671320d/castellan-3.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/df/b4/d2b977587094248e7cfca7474fff948ed7b631213ab4b18c2acb9671320d/castellan-3.3.0.tar.gz
 Summary  : Generic Key Manager interface for OpenStack
